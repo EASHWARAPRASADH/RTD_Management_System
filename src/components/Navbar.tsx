@@ -57,16 +57,16 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Logo & Title */}
           <div className="flex items-center gap-2.5 cursor-pointer" onClick={() => onTabChange("dashboard")}>
             <div className="w-8 h-8 rounded-md bg-blue-600 flex items-center justify-center text-white font-black text-base shadow-xs">
-              R
+              K
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-extrabold tracking-tight text-sm text-slate-900">RTD DISTRO</span>
+                <span className="font-extrabold tracking-tight text-sm text-slate-900">KOKILA ENTERPRISES</span>
                 <span className="text-[9px] font-bold tracking-wider uppercase bg-blue-50 text-blue-700 px-1.5 py-0.2 rounded border border-blue-200">
-                  v2.4
+                  v2.5
                 </span>
               </div>
-              <p className="text-[10px] text-slate-500 font-medium hidden sm:block">Distribution Billing</p>
+              <p className="text-[10px] text-slate-500 font-medium hidden sm:block">Beverage Distribution Billing</p>
             </div>
           </div>
         </div>
