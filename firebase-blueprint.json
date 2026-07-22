@@ -1,0 +1,84 @@
+{
+  "entities": {
+    "customers": {
+      "title": "Customer",
+      "description": "Retail outlets and distributor clients",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "code": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "address": { "type": "string" },
+        "currentOutstanding": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    },
+    "products": {
+      "title": "Product",
+      "description": "Ready to Drink stock items",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "code": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "wholesalePrice": { "type": "number" },
+        "stockCases": { "type": "number" },
+        "stockUnits": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    },
+    "bills": {
+      "title": "Bill",
+      "description": "Sales tax invoices",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "billNo": { "type": "string" },
+        "customerName": { "type": "string" },
+        "grandTotal": { "type": "number" },
+        "amountPaid": { "type": "number text" },
+        "balanceAmount": { "type": "number" },
+        "paymentStatus": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "payments": {
+      "title": "Payment",
+      "description": "Payment collection logs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "billNo": { "type": "string" },
+        "amount": { "type": "number" },
+        "paymentMode": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "audit_logs": {
+      "title": "AuditLog",
+      "description": "System activity logs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "action": { "type": "string text" },
+        "details": { "type": "string" },
+        "timestamp": { "type": "string" }
+      }
+    },
+    "shop_settings": {
+      "title": "ShopSettings",
+      "description": "Store configuration",
+      "type": "object",
+      "properties": {
+        "shopName": { "type": "string" },
+        "gstin": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "RTD Distribution Management System",
+  "description": "Enterprise-grade RTD (Ready-To-Drink) Distribution Management System with customer masters, product catalog, billing, reports, audit logs, and Excel import/export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
